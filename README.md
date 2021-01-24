@@ -33,7 +33,17 @@ This solution optimises 3 hyperparameters or 'genes': learning rate of network, 
 5. The algorithm was repeated for 10 generations, so 1000 models were trained in total.
 
 ## Results
-![alt text](https://github.com/Charl-AI/Genetic-Hyperparameter-Optimisation/blob/master/plot_all_individuals.jpg)
+
+These figures plot the location of each model in the hyperparameter space, with the color representing the loss of the trained model (lower is better) - different marker shapes are used for each species. The figure on the left shows all 1000 models and the figure on the right is a gif which shows the evolution of the species over time (unfortunately the markers used for each species change inbetween generations). 
+
+<p float="left">
+  <img src="plot_all_individuals.jpg" width="450" />
+  <img src="Generation_gif.gif" width="450" /> 
+</p>
+
+The gif makes it clear how different species find different strategies and form distinct clusters (and is quite mesmerising to watch). It's also interesting to note how one species managed to wander away from the hyperparameter space that I had predefined by utilising the Gaussian mutation mechanic. This could be considered a bug, but I like to think of it as proof that the algorithm is able to find hyperparameter combinations that I would not have considered to be good!
+
+The final architecture achieved an accuracy of 88.2 % on the seen dataset and 85.9 % on the unseen dataset, so overfitting was low. The overall model had 713 parameters which is a very concise model for this task. Overall, the model demonstrated a strong performance and was awarded an A+ grade.
 
 ## Discussion 
 

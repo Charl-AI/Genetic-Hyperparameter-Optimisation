@@ -33,6 +33,7 @@ This solution optimises 3 hyperparameters or 'genes': learning rate of network, 
 5. The algorithm was repeated for 10 generations, so 1000 models were trained in total.
 
 ## Results
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 
 ## Discussion 
